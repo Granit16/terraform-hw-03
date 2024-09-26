@@ -30,6 +30,4 @@ resource "yandex_compute_instance" "web" {
     ssh-keys           = "ubuntu:${var.vms_ssh_root_key}"
   }
 
-#  depends_on = [ yandex_compute_instance.web ]
-  
 }

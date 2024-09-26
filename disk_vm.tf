@@ -40,5 +40,4 @@ resource "yandex_compute_instance" "storage" {
     ssh-keys = "ubuntu:${var.vms_ssh_root_key}"
   }
 
-
 }
