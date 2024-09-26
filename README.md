@@ -7,7 +7,7 @@
   Доступ в «Группы безопасности» в ЛК Yandex Cloud есть.
 
   Скриншот входящих правил 
-  ![](https://github.com/Granit16/terraform-hw-02/blob/main/screenshots/ingress.png)
+  ![](https://github.com/Granit16/terraform-hw-03/blob/main/screenshots/ingress.png)
 1
 
 </details>
