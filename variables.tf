@@ -38,6 +38,11 @@ variable "vpc_name" {
   description = "VPC network&subnet name"
 }
 
+variable "platform_id" {
+  type = string
+  default = "standard-v2"
+}
+
 # vm's list
 variable "each_vm" {
   type = list(object({ vm_name=string, cpu=number, ram=number, disk_volume=number }))
