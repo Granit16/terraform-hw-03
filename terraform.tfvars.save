@@ -1,0 +1,5 @@
+each_vm = [ { vm_name="main", cpu=2, ram=1, disk_volume=5 }, { vm_name="replica", cpu=1, ram=2, disk_volume=7 }  ]
+
+
+# type = list(object({ vm_name=string, cpu=number, ram=number, disk_volume=number }))
+vms = [ damir = { vm_name="111" , cpu=2, ram=3, disk_volume=5 } ]
