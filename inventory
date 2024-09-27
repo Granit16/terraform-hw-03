@@ -1,10 +1,10 @@
 [web]
-web-1   ansible_host=89.169.147.7 fqdn=fhmc5janqofq4r357slg.auto.internal
-web-2   ansible_host=89.169.154.172 fqdn=fhm5tf6rss58jaq67fm6.auto.internal
+web-1   ansible_host=89.169.156.118 fqdn=fhmf3f3q40ubehuat296.auto.internal
+web-2   ansible_host=89.169.144.97 fqdn=fhm8dif4j9sll9vvhqe9.auto.internal
 
 [db]
-main   ansible_host=89.169.157.9  fqdn=fhmmnk13o16fmlj5ta5f.auto.internal
-replica   ansible_host=89.169.145.126  fqdn=fhm7vaevfi5s00vod2u1.auto.internal
+main   ansible_host=89.169.144.124  fqdn=fhmuooq5gsn773rgre4o.auto.internal
+replica   ansible_host=89.169.144.49  fqdn=fhm437rnchli0sc6i30t.auto.internal
 
 [storage]
-storage   ansible_host=89.169.158.40  fqdn=fhm7r8taju6601vsd2or.auto.internal
+storage   ansible_host=89.169.136.222  fqdn=fhmrj6c11pr9lfgc5ivl.auto.internal

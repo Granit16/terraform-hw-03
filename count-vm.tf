@@ -6,12 +6,12 @@ data "yandex_compute_image" "ubuntu" {
 resource "yandex_compute_instance" "web" {
   count = 2
   name = "web-${ count.index + 1 }"
-  platform_id = "standard-v2"
+  platform_id = var.platform_id
 
   resources {
-    cores = 2
-    memory = 1
-    core_fraction = 5
+    cores = var.web_cfg.cores
+    memory = var.web_cfg.memory
+    core_fraction = var.web_cfg.core_fraction
   }
 
   boot_disk {
@@ -23,6 +23,7 @@ resource "yandex_compute_instance" "web" {
   network_interface {
     subnet_id = yandex_vpc_subnet.develop.id
     nat = true
+    security_group_ids = [yandex_vpc_security_group.example.id]
   }
 
   metadata = {

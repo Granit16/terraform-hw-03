@@ -53,3 +53,8 @@ variable "vms_ssh_root_key" {
   default = "ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIOpMdS6Y/Swm4zm5RloPzVAIkRquRiUmVY3fVFenA0U damir@terraform-main"
   description = "ssh-keygen -t ed25519"
 }
+
+variable "web_cfg" {
+  type = map
+  default = {cores = 2, memory = 1,  core_fraction = 5}
+}

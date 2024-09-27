@@ -7,7 +7,7 @@ resource "yandex_compute_instance" "db" {
   resources {
     cores = each.value.cpu
     memory = each.value.ram
-    core_fraction = 5
+    core_fraction = var.web_cfg.core_fraction
   }
 
   boot_disk {
